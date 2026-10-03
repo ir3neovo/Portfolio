@@ -24,6 +24,7 @@ function About() {
 
             <p>
             <span>B.Sc., Computer Science</span>
+            <br />
             Minor in Statistics
             <br />
             McGill University
@@ -32,6 +33,7 @@ function About() {
             </p>
             <p>
               <span>MEng, Electrical & Computer Engineering</span>
+              <br />
               University of Toronto
               <br />
               2026 – Present
