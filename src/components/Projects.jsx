@@ -1,4 +1,5 @@
 import { useState } from "react"
+import projects from "../data/projects"
 import background2 from "../assets/background2.png"
 import HomeButton from "./HomeButton"
 
@@ -12,38 +13,6 @@ function Projects() {
     }))
   }
 
-  const projects = [
-    {
-      id: 1,
-      title: "Full-Stack Booking Platform",
-      tech: "PHP • MySQL • JavaScript • HTML/CSS",
-      description:
-        "A scheduling platform for students and professors featuring role-based accounts, recurring office hours, booking requests, notifications, dashboards, and appointment management.",
-    },
-    {
-      id: 2,
-      title: "Quantifier Reasoning in LLMs",
-      tech: "Python • BERT • Llama 3 • GPT-4",
-      description:
-        "Evaluated large language models on commonsense truth judgment, quantifier reasoning, and scope ambiguity to explore differences in logical reasoning across model families.",
-    },
-    {
-    id: 3,
-        title: "Online Ordering Database System",
-        tech: "Java • SQL • Relational Databases",
-        description:
-        "Built an online ordering database with inventory, coupons, billing, and reporting features, using SQL procedures and a Java application to automate ordering and inventory workflows.",
-
-    },
-    {
-      id: 4,
-      title: "Operating System Simulation",
-      tech: "C • Linux • Pthreads",
-      description:
-        "Developed systems projects including a command-line shell, process scheduling simulator, PCB and ready-queue management, and concurrent programming exercises.",
-    },
-  ]
-
   return (
     <>
       <section
@@ -53,44 +22,40 @@ function Projects() {
       >
         <div className="projects-container">
           <h2>Projects</h2>
-
           <div className="projects-grid">
-            {projects.map((project) => (
-              <button
+            {projects.map((project, index) => (
+                <button
                 key={project.id}
                 type="button"
                 className={`project-card ${
-                  flippedCards[project.id] ? "flipped" : ""
+                    flippedCards[project.id] ? "flipped" : ""
                 }`}
                 onClick={() => toggleCard(project.id)}
-              >
+                >
                 <div className="project-card-inner">
 
-                  <div className="project-card-front">
+                    <div className="project-card-front">
                     <span className="project-number">
-                      0{project.id}
+                        {String(index + 1).padStart(2, "0")}
                     </span>
 
                     <h3>{project.title}</h3>
-
                     <p>{project.tech}</p>
+                    </div>
 
-                  </div>
-
-                  <div className="project-card-back">
+                    <div className="project-card-back">
                     <h3>{project.title}</h3>
-
                     <p>{project.description}</p>
 
                     <span className="flip-hint">
-                      ← Back
+                        ← Back
                     </span>
-                  </div>
+                    </div>
 
                 </div>
-              </button>
+                </button>
             ))}
-          </div>
+            </div>
         </div>
       </section>
 

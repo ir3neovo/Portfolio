@@ -1,127 +1,130 @@
 import { useState } from "react"
-import HomeButton from "./HomeButton"
-import background2 from "../assets/background2.png"
 import { Link } from "react-router-dom"
+
+import experiences from "../data/experiences"
+import background2 from "../assets/background2.png"
+import HomeButton from "./HomeButton"
+
+function ExperienceEntries({ items }) {
+  return (
+    <div className="experience-content">
+      {items.map((item) => (
+        <div className="experience-entry" key={item.id}>
+          <h3>{item.role}</h3>
+
+          <p>
+            {item.organization}
+            {item.location && `, ${item.location}`}
+          </p>
+
+          <span>{item.date}</span>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 function Experience() {
   const [openSection, setOpenSection] = useState(null)
 
   const toggleSection = (section) => {
-    setOpenSection(openSection === section ? null : section)
+    setOpenSection((current) =>
+      current === section ? null : section
+    )
   }
 
   return (
-    <section
+    <>
+      <section
         id="experience"
         className="experience-section"
         style={{ backgroundImage: `url(${background2})` }}
-    >
-      <div className="experience-container">
-        <h2>Experience</h2>
+      >
+        <div className="experience-container">
+          <h2>Experience</h2>
 
-        <div className="experience-menu">
+          <div className="experience-menu">
 
-          <div className="experience-item">
-            <button
-              className="experience-header"
-              onClick={() => toggleSection("professional")}
-            >
-              <span>Professional</span>
-              <span className="dropdown-icon">
-                {openSection === "professional" ? "−" : "+"}
-              </span>
-            </button>
+            {/* PROFESSIONAL */}
+            <div className="experience-item">
+              <button
+                type="button"
+                className="experience-header"
+                onClick={() => toggleSection("professional")}
+                aria-expanded={openSection === "professional"}
+              >
+                <span>Professional</span>
 
-            {openSection === "professional" && (
-              <div className="experience-content">
-                <div className="experience-entry">
-                <h3>Digital Marketing & Social Media Intern</h3>
-                <p>
-                    Canadian Rheumatology Association (CRA), Toronto, ON
-                </p>
-                <span>Jun. 2026 – Jul. 2026</span>
-                </div>
+                <span className="dropdown-icon">
+                  {openSection === "professional" ? "−" : "+"}
+                </span>
+              </button>
 
-                <div className="experience-entry">
-                <h3>Project Assistant Intern</h3>
-                <p>
-                    Huawei Canada
-                </p>
-                <span>Jul. 2024 – Sep. 2024</span>
-                </div>
+              {openSection === "professional" && (
+                <ExperienceEntries
+                  items={experiences.professional}
+                />
+              )}
+            </div>
 
-              </div>
-            )}
+            {/* ACADEMIA */}
+            <div className="experience-item">
+              <button
+                type="button"
+                className="experience-header"
+                onClick={() => toggleSection("academia")}
+                aria-expanded={openSection === "academia"}
+              >
+                <span>Academia</span>
+
+                <span className="dropdown-icon">
+                  {openSection === "academia" ? "−" : "+"}
+                </span>
+              </button>
+
+              {openSection === "academia" && (
+                <ExperienceEntries
+                  items={experiences.academia}
+                />
+              )}
+            </div>
+
+            {/* EXTRACURRICULAR */}
+            <div className="experience-item">
+              <button
+                type="button"
+                className="experience-header"
+                onClick={() => toggleSection("extracurricular")}
+                aria-expanded={openSection === "extracurricular"}
+              >
+                <span>Extracurricular</span>
+
+                <span className="dropdown-icon">
+                  {openSection === "extracurricular" ? "−" : "+"}
+                </span>
+              </button>
+
+              {openSection === "extracurricular" && (
+                <ExperienceEntries
+                  items={experiences.extracurricular}
+                />
+              )}
+            </div>
+
           </div>
 
-          <div className="experience-item">
-            <button
-              className="experience-header"
-              onClick={() => toggleSection("academia")}
-            >
-              <span>Academia</span>
-              <span className="dropdown-icon">
-                {openSection === "academia" ? "−" : "+"}
-              </span>
-            </button>
-
-            {openSection === "academia" && (
-              <div className="experience-content">
-                <div className="experience-entry">
-                    <h3>Teaching Assistant</h3>
-                    <p>ECE244 Programming Fundamentals (Fall 2026)</p>
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className="experience-item">
-            <button
-              className="experience-header"
-              onClick={() => toggleSection("extracurricular")}
-            >
-              <span>Extracurricular</span>
-              <span className="dropdown-icon">
-                {openSection === "extracurricular" ? "−" : "+"}
-              </span>
-            </button>
-
-            {openSection === "extracurricular" && (
-              <div className="experience-content">
-                <div className="experience-entry">
-                <h3>Vice President, Communications & Marketing</h3>
-                <p>
-                    Electrical & Computer Engineering Graduate Student Society (ECEGSS),
-                    University of Toronto
-                </p>
-                <span>Sep. 2026 – Present</span>
-                </div>
-
-                <div className="experience-entry">
-                <h3>Program Support / Visual Graphics Designer</h3>
-                <p>
-                    International Education Help Organisation (IEHO)
-                </p>
-                <span>Feb. 2026 – Present</span>
-                </div>
-
-                <div className="experience-entry">
-                <h3>Vice President, Media</h3>
-                <p>
-                    Chinese Students & Scholars Association (CSSA), McGill University
-                </p>
-                <span>May 2025 – Apr. 2026</span>
-                </div>
-              </div>
-            )}
-          </div>
-
+          <Link
+            to="/projects"
+            className="experience-next-button"
+          >
+            <span>Explore My Projects</span>
+            <span className="experience-arrow">→</span>
+          </Link>
         </div>
+      </section>
 
-        
-      </div>
       <HomeButton />
-    </section>
+    </>
   )
 }
 
