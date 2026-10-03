@@ -1,14 +1,11 @@
 import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <main>
-        <h1>Irene Wang</h1>
-        <p>Welcome to my portfolio.</p>
-      </main>
+      <Hero />
     </>
   )
 }
