@@ -24,18 +24,13 @@ function About() {
 
             <p>
             <span>B.Sc., Computer Science</span>
-            <br />
             Minor in Statistics
-            <br />
             McGill University
-            <br />
             2022 – 2026
             </p>
             <p>
               <span>MEng, Electrical & Computer Engineering</span>
-              <br />
               University of Toronto
-              <br />
               2026 – Present
             </p>
           </div>
