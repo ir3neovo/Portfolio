@@ -23,7 +23,7 @@ function About() {
             <h3>Irene Wang</h3>
 
             <p>
-            <span>B.Sc., Major in Computer Science</span>
+            <span>B.Sc., Computer Science</span>
             Minor in Statistics
             <br />
             McGill University

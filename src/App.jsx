@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Experience from "./components/Experience"
+import Projects from "./components/Projects"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   )
