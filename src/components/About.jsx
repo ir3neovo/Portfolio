@@ -49,15 +49,13 @@ function About() {
             technologies we build—how data, intelligent systems, and software 
             components work together, why certain design decisions are made, and how 
             these systems can be applied to solve complex real-world problems. 
-
           </p>
 
           <p className="about-intro">
-            This shift in perspective led me to pursue an MEng in Electrical and 
-            Computer Engineering at the University of Toronto, where my coursework and 
-            projects have allowed me to explore full-stack development, large language 
-            model evaluation, cloud computing, machine learning, and performant 
-            software systems.
+            This led me to pursue an MEng in Electrical and Computer Engineering at 
+            the University of Toronto, where my coursework and projects have allowed me
+            to explore full-stack development, large language model evaluation, cloud 
+            computing, machine learning, and performant software systems.
           </p>
         </div>
 
