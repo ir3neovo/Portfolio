@@ -43,19 +43,24 @@ function About() {
           <h2>About</h2>
 
           <p className="about-intro">
-            With an undergraduate background spanning computer science and
-            statistics, I became increasingly interested in understanding the
-            bigger picture behind the technologies we build—how data,
-            intelligent systems, and software can work together to solve
-            complex problems.
+            With an undergraduate background spanning computer science and statistics, 
+            I became increasingly interested in understanding the bigger picture 
+            behind the technologies we build—how data, intelligent systems, and 
+            software components work together, why certain design decisions are made, 
+            and how these systems can be applied to solve complex real-world problems. 
+            As generative AI becomes increasingly capable of writing code, I have also 
+            come to see software development as extending beyond simply producing 
+            functional code toward understanding the systems, architecture, and 
+            reasoning behind it.
+
           </p>
 
           <p className="about-intro">
-            With the goal of developing deeper expertise in analytics and artificial
-            intelligence, I chose to pursue an MEng in Electrical and Computer
-            Engineering at the University of Toronto. My coursework and projects have
-            focused on areas including full-stack development, large language model
-            evaluation, cloud computing, machine learning, and software systems.
+            This shift in perspective led me to pursue an MEng in Electrical and 
+            Computer Engineering at the University of Toronto, where my coursework and 
+            projects have allowed me to explore full-stack development, large language 
+            model evaluation, cloud computing, machine learning, and performant 
+            software systems.
           </p>
         </div>
 
