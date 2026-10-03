@@ -6,9 +6,9 @@ import HomeButton from "./HomeButton"
 function About() {
   return (
     <section
-        id="about"
-        className="about-section"
-        style={{ backgroundImage: `url(${background2})` }}
+      id="about"
+      className="about-section"
+      style={{ backgroundImage: `url(${background2})` }}
     >
       <div className="about-card">
 
@@ -21,19 +21,22 @@ function About() {
 
           <div className="education-info">
             <h3>Irene Wang</h3>
+
             <p>
-            <span>B.Sc., Computer Science</span>
-            Minor in Statistics
-            <br>
-            McGill University
-            </br>
-            2022 – 2026
+              <span>B.Sc., Computer Science</span>
+              <br />
+              Minor in Statistics
+              <br />
+              McGill University
+              <br />
+              2022 – 2026
             </p>
+
             <p>
               <span>MEng, Electrical & Computer Engineering</span>
-              <br>
+              <br />
               University of Toronto
-              </br>
+              <br />
               2026 – Present
             </p>
           </div>
@@ -43,29 +46,29 @@ function About() {
           <h2>About</h2>
 
           <p className="about-intro">
-            As AI takes on more of the coding itself, I’ve become increasingly 
-            interested in the bigger picture—how data, intelligent systems, and 
-            software components fit together, why design decisions matter, and how 
+            As AI takes on more of the coding itself, I’ve become increasingly
+            interested in the bigger picture—how data, intelligent systems, and
+            software components fit together, why design decisions matter, and how
             technology can solve real-world problems.
           </p>
 
           <p className="about-intro">
-            This led me to pursue an MEng in Electrical and Computer Engineering at 
+            This led me to pursue an MEng in Electrical and Computer Engineering at
             the University of Toronto, where my coursework and projects have allowed me
-            to explore full-stack development, large language model evaluation, cloud 
+            to explore full-stack development, large language model evaluation, cloud
             computing, machine learning, and performant software systems.
           </p>
         </div>
 
         <Link to="/experience" className="about-next-button">
-            <span>Explore My Experience</span>
-            <span className="about-arrow">→</span>
+          <span>Explore My Experience</span>
+          <span className="about-arrow">→</span>
         </Link>
 
       </div>
+
       <HomeButton />
     </section>
-    
   )
 }
 
