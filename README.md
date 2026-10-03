@@ -1,16 +1,29 @@
-# React + Vite
+# Irene Wang — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website built with **React** and **Vite** to showcase my background, experience, technical projects, and skills.
 
-Currently, two official plugins are available:
+The website is designed as an interactive multi-page portfolio with a soft, minimal visual style and responsive navigation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies
 
-## React Compiler
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+- React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the Oxlint configuration
+## Source & Acknowledgements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This website was initially created using the **React + Vite starter template** and developed with reference to the portfolio website development guide used during the project's setup.
+
+The original starter environment is provided by the [Vite project](https://vite.dev/) and uses the official React integration.
+
+The structure, content, visual design, styling, interactions, and portfolio customization were further developed and adapted for this personal portfolio.
+
+## Author
+
+**Irene Wang**
+
+GitHub: [ir3neovo](https://github.com/ir3neovo)
