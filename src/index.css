@@ -516,11 +516,10 @@ body {
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 15px;
-  line-height: 1.7;
-
   color: #777;
 
-  margin-bottom: 18px;
+  margin: 8px 0 18px;
+  line-height: 1.25;
 }
 
 .education-info span {
