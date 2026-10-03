@@ -1,4 +1,5 @@
 import backgroundImg from "../assets/background.png"
+import { Link } from "react-router-dom"
 
 function Hero() {
   return (
@@ -22,10 +23,10 @@ function NavbarContent() {
             Welcome to my Portfolio
         </h2>
 
-        <a href="#about" className="get-started-button">
+        <Link to="/about" className="get-started-button">
           <span className="button-circle">→</span>
           <span>Get Started</span>
-        </a>
+        </Link>
       </div>
     </div>
   )

@@ -1,5 +1,7 @@
 import profileImg from "../assets/profile.jpg"
 import background2 from "../assets/background2.png"
+import { Link } from "react-router-dom"
+import HomeButton from "./HomeButton"
 
 function About() {
   return (
@@ -57,13 +59,15 @@ function About() {
           </p>
         </div>
 
-        <a href="#experience" className="about-next-button">
+        <Link to="/experience" className="about-next-button">
             <span>Explore My Experience</span>
             <span className="about-arrow">→</span>
-        </a>
+        </Link>
 
       </div>
+      <HomeButton />
     </section>
+    
   )
 }
 
