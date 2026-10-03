@@ -43,12 +43,10 @@ function About() {
           <h2>About</h2>
 
           <p className="about-intro">
-            As generative AI becomes increasingly capable of writing code, I have come 
-            to see software development as extending beyond simply producing 
-            functional code toward understanding the bigger picture behind the 
-            technologies we build—how data, intelligent systems, and software 
-            components work together, why certain design decisions are made, and how 
-            these systems can be applied to solve complex real-world problems. 
+            As AI takes on more of the coding itself, I’ve become increasingly 
+            interested in the bigger picture—how data, intelligent systems, and 
+            software components fit together, why design decisions matter, and how 
+            technology can solve real-world problems.
           </p>
 
           <p className="about-intro">
