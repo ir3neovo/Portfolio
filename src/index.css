@@ -13,6 +13,112 @@ body {
   color: #767676;
 }
 
+/* CONTACT */
+
+.contact-section {
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 140px 40px 100px;
+}
+
+.contact-container {
+  width: min(900px, 92%);
+  text-align: center;
+
+  transform: translateY(60px);
+}
+
+.contact-container h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+
+  font-size: 56px;
+  color: #747474;
+
+  margin-bottom: 20px;
+}
+
+.contact-intro {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+
+  font-size: 18px;
+  color: #858585;
+
+  margin-bottom: 60px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 90px;
+
+  margin-top: 70px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  text-decoration: none;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+
+  color: #747474;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.contact-item img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-6px);
+  color: #6f9ca5;
+
+  text-shadow:
+    0 0 10px rgba(111, 156, 165, 0.25);
+}
+
+.contact-item:hover img {
+  transform: scale(1.08);
+}
+
+@media (max-width: 650px) {
+  .contact-links {
+    gap: 40px;
+  }
+
+  .contact-item img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /* PROJECTS */
 
 .projects-section {
