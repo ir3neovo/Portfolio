@@ -1,38 +1,33 @@
+import backgroundImg from "../assets/background.png"
+
 function Hero() {
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-content">
-        <p className="hero-eyebrow">Hello, I’m</p>
+    <section
+      id="home"
+      className="hero-section"
+      style={{ backgroundImage: `url(${backgroundImg})` }}
+    >
+      <NavbarContent />
+    </section>
+  )
+}
 
-        <h1>Irene Wang</h1>
+function NavbarContent() {
+  return (
+    <div className="hero-inner">
+      <div className="hero-text">
+        <h1 className="intro-text">Hi, I’m Irene</h1>
 
-        <h2>
-          MEng Electrical & Computer Engineering student focused on
-          software, machine learning, and data.
+        <h2 className="welcome-text typing-text">
+            Welcome to my Portfolio
         </h2>
 
-        <p className="hero-description">
-          I build software and data-driven projects across full-stack
-          development, machine learning, systems programming, and applied
-          research.
-        </p>
-
-        <div className="hero-buttons">
-          <a href="#projects" className="primary-button">
-            View Projects
-          </a>
-
-          <a
-            href="https://github.com/ir3neovo"
-            target="_blank"
-            rel="noreferrer"
-            className="secondary-button"
-          >
-            GitHub
-          </a>
-        </div>
+        <a href="#about" className="get-started-button">
+          <span className="button-circle">→</span>
+          <span>Get Started</span>
+        </a>
       </div>
-    </section>
+    </div>
   )
 }
 

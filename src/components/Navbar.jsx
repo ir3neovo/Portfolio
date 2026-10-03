@@ -1,15 +1,16 @@
 function Navbar() {
   return (
-    <nav>
-      <h2>Irene Wang</h2>
+    <nav className="navbar">
+      <div className="nav-line"></div>
 
-      <div>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+      <div className="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#projects">PROJECT</a>
+        <a href="#contact">CONTACT</a>
       </div>
+
+      <div className="nav-line"></div>
     </nav>
   )
 }
