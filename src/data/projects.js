@@ -13,7 +13,7 @@ const projects = [
     title: "Quantifier Reasoning in LLMs",
     tech: "Python • BERT • Llama 3 • GPT-4",
     description:
-      "Evaluated language models on commonsense truth judgment, quantifier reasoning, and scope ambiguity.",
+      "Evaluated BERT, Llama 3, and GPT-4 across 200 test cases, including 60 commonsense truth judgments, 120 quantifier reasoning examples, and 20 scope ambiguity cases, to assess logical reasoning and reliance on real-world knowledge.",
     github:
       "https://github.com/ir3neovo/Evaluating-Logical-Reasoning-and-Commonsense-Reliance-in-LLMs",
   },
@@ -43,6 +43,18 @@ const projects = [
     github: "https://github.com/ir3neovo/my-little-space",
     demo: "https://ir3neovo.github.io/my-little-space/",
   },
+
+  
+{
+  id: 6,
+  title: "Café Demand Forecasting",
+  tech: "Python • scikit-learn • FastAPI • React • TypeScript • Render",
+  description:
+    "Developed and deployed a full-stack ML application to forecast hourly beverage demand across three cafés. Compared multiple models and implemented a Linear Regression pipeline with historical lag and rolling-average features, achieving a test MAE of 10.90 drinks per hour.",
+  github: "https://github.com/ir3neovo/Cafe-Demand-forecasting",
+  demo: "https://cafe-demand-dashboard.onrender.com/",
+},
+
 ]
 
 export default projects
