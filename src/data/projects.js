@@ -55,6 +55,15 @@ const projects = [
   demo: "https://cafe-demand-dashboard.onrender.com/",
 },
 
+  {
+    id: 7,
+    title: "Tower Defense — First Stand",
+    tech: "C++17 • SFML 3.1",
+    description:
+      "Built a tower defense game where players spend coins to place towers and choose whether to target healers or the enemy closest to the exit during a 12-enemy wave.",
+    github: "https://github.com/ir3neovo/TowerDefense-CPP",
+  },
+
 ]
 
 export default projects
